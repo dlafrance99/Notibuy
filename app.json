@@ -1,24 +1,31 @@
 {
   "expo": {
     "name": "Notibuy",
-    "slug": "Notibuy",
+    "slug": "notibuy",
     "version": "1.0.0",
     "orientation": "portrait",
+    "userInterfaceStyle": "dark",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.dlafrance99.notibuy",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "backgroundColor": "#000000"
       }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "plugins": [],
+    "extra": {
+      "eas": {
+        "projectId": "d708a62a-0c09-46c4-91af-68159138d611"
+      }
     }
   }
 }
